@@ -42,7 +42,6 @@
 
 
         <!-- CORREGIDO: se ordenó type="xml" sin espacios innecesarios -->
-        <field name="arch" type="xml">
 
         <field name="arch" type="xml">
             <xpath expr="//list" position="attributes">
