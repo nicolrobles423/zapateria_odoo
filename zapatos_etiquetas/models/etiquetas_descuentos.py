@@ -4,11 +4,7 @@ class Etiquetas(models.Model):
     _name = 'etiquetas.etiquetas'
     _description = 'Modelo para gestionar etiquetas'
 
-    name = fields.Selection([
-        ('oferta', 'Oferta'),
-        ('nuevo', 'Nuevo'),
-        ('liquidacion', 'Liquidación'),
-    ], string='Etiqueta', required=True)
+    name = fields.Char(string='Nombre', required=True)
     color = fields.Char(string='Color de la Etiqueta', default='#000000')
     zapato_ids = fields.Many2many('zapatos.zapato', string='Zapatos Relacionados')
     
